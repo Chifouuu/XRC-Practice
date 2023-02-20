@@ -1,0 +1,7 @@
+name: XRCPracticeByChifou
+author: chifou
+version: 1.0
+main: com.chifou.xrc.Main
+commands:
+  practicehelp:
+    description: permit to get help for the plugins commands
