@@ -1,6 +1,10 @@
 package com.chifou.xrc;
 
+import com.chifou.xrc.events.EventHandlers;
+import com.chifou.xrc.gui.queue.UnrankedGuiCommand;
+import com.chifou.xrc.gui.queue.rankedGui;
 import com.chifou.xrc.help.HelpCommand;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -18,6 +22,10 @@ public class Main extends JavaPlugin {
         }
 
         getCommand("practicehelp").setExecutor(new HelpCommand());
+        getCommand("unrankedgui").setExecutor(new UnrankedGuiCommand());
+        getCommand("rankedgui").setExecutor(new rankedGui());
+
+        Bukkit.getPluginManager().registerEvents(new EventHandlers(), this);
 
 
     }
