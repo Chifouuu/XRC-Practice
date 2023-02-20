@@ -8,10 +8,13 @@
 ### But you can't
 - Deofuscate / decompile the plugin
 - Pick code for your plugin
+- Change the code of the plugin
 
 ### You have to 
 - Credit the plugin if is a private or public server (sign in the spawn, in a message, in a command(/credits)..)
 - Keep the /plugins functional
+
+Copyright@Chifou2023
 
 ## Features
 soon
