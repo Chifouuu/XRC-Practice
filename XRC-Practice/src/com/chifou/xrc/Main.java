@@ -27,7 +27,7 @@ public class Main extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new EventHandlers(), this);
 
-
+        //in config item in hotbar when joinevent
     }
 
     @Override
