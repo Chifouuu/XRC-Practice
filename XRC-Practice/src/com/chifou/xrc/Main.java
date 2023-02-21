@@ -4,6 +4,7 @@ import com.chifou.xrc.events.EventHandlers;
 import com.chifou.xrc.gui.queue.UnrankedGuiCommand;
 import com.chifou.xrc.gui.queue.rankedGui;
 import com.chifou.xrc.help.HelpCommand;
+import com.chifou.xrc.queue.Unranked;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -14,6 +15,10 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+
+        clearHashmaps();
+
+        saveDefaultConfig();
 
         int boo = 1;
         while (boo < 8) {
@@ -28,6 +33,10 @@ public class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new EventHandlers(), this);
 
         //in config item in hotbar when joinevent
+    }
+
+    private static void clearHashmaps() {
+        Unranked.nodebuff.clear();
     }
 
     @Override
